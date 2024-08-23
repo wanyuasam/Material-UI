@@ -6,7 +6,24 @@ import React from 'react'
 import Container from '@mui/material/Container'
 import { AcUnitOutlined } from '@mui/icons-material'
 import { KeyboardArrowRightOutlined, KeyboardArrowLeftOutlined } from '@mui/icons-material'
+import { makeStyles } from '@mui/material'
+
+
+// makeStyles Hook
+const useStyles = makeStyles({
+    btn: {
+        fontSize: 60,
+        backgroundColor: 'violet',
+        '&:hover': {
+            backgroundColor: 'blue'
+        }
+
+    }
+})
+
+
 function CreatePage() {
+    const classes = useStyles()
   return (
     <Container> 
         <Typography
@@ -42,7 +59,7 @@ function CreatePage() {
        <ButtonGroup
             variant='outlined'
        >
-            <Button>ONe</Button>
+            <Button className={classes.btn}>ONe</Button>
             <Button variant='contained'>Two</Button>
             <Button>THree</Button>
        </ButtonGroup>
