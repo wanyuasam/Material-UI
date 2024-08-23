@@ -3,10 +3,11 @@ import ButtonGroup from '@mui/material/ButtonGroup'
 import  Button  from '@mui/material/Button'
 import  Typography  from '@mui/material/Typography'
 import React from 'react'
+import Container from '@mui/material/Container'
 
 function CreatePage() {
   return (
-    <div>
+    <Container> 
         <Typography
             variant="h6"
             component="h2"
@@ -45,7 +46,7 @@ function CreatePage() {
             <Button>THree</Button>
        </ButtonGroup>
 
-    </div>
+    </Container>
   )
 }
 
