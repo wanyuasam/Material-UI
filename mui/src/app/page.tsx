@@ -10,9 +10,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <h1>MUI</h1>
-x      <Link href="/createPage">Create Page</Link>
 
-       <button onClick= {()=> router.push('/notes')}>Notes</button>
 
 
     </main>
