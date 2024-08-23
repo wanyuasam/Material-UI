@@ -4,7 +4,8 @@ import  Button  from '@mui/material/Button'
 import  Typography  from '@mui/material/Typography'
 import React from 'react'
 import Container from '@mui/material/Container'
-
+import { AcUnitOutlined } from '@mui/icons-material'
+import { KeyboardArrowRightOutlined, KeyboardArrowLeftOutlined } from '@mui/icons-material'
 function CreatePage() {
   return (
     <Container> 
@@ -45,6 +46,19 @@ function CreatePage() {
             <Button variant='contained'>Two</Button>
             <Button>THree</Button>
        </ButtonGroup>
+       {/* ICONS */}
+       <AcUnitOutlined fontSize='large'/>
+       {/* <AcUnitOutlined color='action'/>
+       <AcUnitOutlined color='error'/>
+       <AcUnitOutlined color='disabled'/> */}
+
+       <Button
+        startIcon={<KeyboardArrowLeftOutlined/>}
+        variant='contained'
+        endIcon={<KeyboardArrowRightOutlined/>}
+       >
+        Pages
+       </Button>
 
     </Container>
   )
