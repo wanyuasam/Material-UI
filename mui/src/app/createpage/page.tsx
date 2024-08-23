@@ -6,24 +6,21 @@ import React from 'react'
 import Container from '@mui/material/Container'
 import { AcUnitOutlined } from '@mui/icons-material'
 import { KeyboardArrowRightOutlined, KeyboardArrowLeftOutlined } from '@mui/icons-material'
-import { makeStyles } from '@mui/material'
+import {  SxProps } from '@mui/material'
 
 
 // makeStyles Hook
-const useStyles = makeStyles({
-    btn: {
-        fontSize: 60,
-        backgroundColor: 'violet',
-        '&:hover': {
-            backgroundColor: 'blue'
-        }
-
-    }
-})
+const btnStyles: SxProps = {
+    fontSize: 24,
+    backgroundColor: 'yellow',
+    '&:hover': {
+      backgroundColor: 'blue',
+    },
+  }
 
 
 function CreatePage() {
-    const classes = useStyles()
+    // const classes = useStyles()
   return (
     <Container> 
         <Typography
@@ -56,10 +53,12 @@ function CreatePage() {
         Submit
        </Button>
 
+       <Button sx={btnStyles} variant='contained'>skldafjklj</Button>
+
+
        <ButtonGroup
             variant='outlined'
        >
-            <Button className={classes.btn}>ONe</Button>
             <Button variant='contained'>Two</Button>
             <Button>THree</Button>
        </ButtonGroup>
