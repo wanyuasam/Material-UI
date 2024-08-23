@@ -10,9 +10,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <h1>MUI</h1>
-
-
-
     </main>
   );
 }

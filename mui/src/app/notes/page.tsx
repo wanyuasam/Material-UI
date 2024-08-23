@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Tickets() {
+export default function Notes() {
   return (
     <main>
-      <h1>Tickets</h1>
+      <h1>Notes</h1>
     </main>
   )
 }
